@@ -5,16 +5,16 @@ import AppLogo from '@/components/ui/AppLogo';
 const footerLinks = {
   services: [
     { label: 'Residential Construction', href: '/residential-construction' },
-    { label: 'Commercial Construction', href: '/#services' },
-    { label: 'Residential Interiors', href: '/#services' },
-    { label: 'Commercial Interiors', href: '/#services' },
-    { label: 'Sport Infrastructure', href: '/#services' },
-    { label: 'Landscaping', href: '/#services' },
+    { label: 'Commercial Construction', href: '/commercial' },
+    { label: 'Residential Interiors', href: '/residential-interiors' },
+    { label: 'Commercial Interiors', href: '/commercial-interiors' },
+    { label: 'Sport Infrastructure', href: '/sport-infra' },
+    { label: 'Landscaping', href: '/landscaping' },
   ],
   company: [
     { label: 'About Us', href: '/#about' },
-    { label: 'Portfolio', href: '/#portfolio' },
-    { label: 'Industries', href: '/#industries' },
+    { label: 'Portfolio', href: '/portfolio' },
+    { label: 'Industries', href: '/industries' },
     { label: 'Careers', href: '/#careers' },
     { label: 'Contact', href: '/contact' },
   ],
@@ -27,14 +27,14 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
+    <footer className="bg-[#1F3A5F] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <AppLogo size={40} />
+              <AppLogo size={44} />
               <span className="font-bold text-xl tracking-tight text-white">LayingStone</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
@@ -46,7 +46,7 @@ export default function Footer() {
                   key={social}
                   href="#"
                   aria-label={`Follow on ${social}`}
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-colors"
+                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#D4AF37] hover:text-[#1F3A5F] flex items-center justify-center transition-colors"
                 >
                   <span className="text-xs font-bold uppercase">{social?.[0]}</span>
                 </a>
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {footerLinks?.services?.map((link) => (
                 <li key={link?.label}>
-                  <Link href={link?.href} className="text-white/60 hover:text-accent text-sm transition-colors">
+                  <Link href={link?.href} className="text-white/60 hover:text-[#D4AF37] text-sm transition-colors">
                     {link?.label}
                   </Link>
                 </li>
@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {footerLinks?.company?.map((link) => (
                 <li key={link?.label}>
-                  <Link href={link?.href} className="text-white/60 hover:text-accent text-sm transition-colors">
+                  <Link href={link?.href} className="text-white/60 hover:text-[#D4AF37] text-sm transition-colors">
                     {link?.label}
                   </Link>
                 </li>
@@ -87,23 +87,23 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Contact Us</h3>
             <ul className="space-y-3 text-sm text-white/60">
               <li className="flex gap-2">
-                <span className="text-accent mt-0.5">📍</span>
+                <span className="text-[#D4AF37] mt-0.5">📍</span>
                 <span>42 Prestige Tower, MG Road, Bangalore 560001</span>
               </li>
               <li>
-                <a href="tel:+919876543210" className="flex gap-2 hover:text-accent transition-colors">
-                  <span className="text-accent">📞</span>
+                <a href="tel:+919876543210" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
+                  <span className="text-[#D4AF37]">📞</span>
                   <span>+91 98765 43210</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@layingstone.in" className="flex gap-2 hover:text-accent transition-colors">
-                  <span className="text-accent">✉️</span>
+                <a href="mailto:hello@layingstone.in" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
+                  <span className="text-[#D4AF37]">✉️</span>
                   <span>hello@layingstone.in</span>
                 </a>
               </li>
               <li className="flex gap-2">
-                <span className="text-accent">🕐</span>
+                <span className="text-[#D4AF37]">🕐</span>
                 <span>Mon–Sat: 9AM – 7PM</span>
               </li>
             </ul>
@@ -115,7 +115,7 @@ export default function Footer() {
           <p>© 2026 LayingStone. All rights reserved.</p>
           <div className="flex gap-6">
             {footerLinks?.legal?.map((link) => (
-              <Link key={link?.label} href={link?.href} className="hover:text-accent transition-colors">
+              <Link key={link?.label} href={link?.href} className="hover:text-[#D4AF37] transition-colors">
                 {link?.label}
               </Link>
             ))}

@@ -12,21 +12,21 @@ export const navItems: NavItem[] = [
     href: '#',
     children: [
       { label: 'Residential', href: '/residential-construction' },
-      { label: 'Commercial', href: '/#services' },
+      { label: 'Commercial', href: '/commercial' },
       {
         label: 'Interiors',
         href: '#',
         children: [
-          { label: 'Residential Interiors', href: '/#services' },
-          { label: 'Commercial Interiors', href: '/#services' },
+          { label: 'Residential Interiors', href: '/residential-interiors' },
+          { label: 'Commercial Interiors', href: '/commercial-interiors' },
         ],
       },
-      { label: 'Sport Infra', href: '/#services' },
-      { label: 'Landscaping', href: '/#services' },
+      { label: 'Sport Infra', href: '/sport-infra' },
+      { label: 'Landscaping', href: '/landscaping' },
     ],
   },
-  { label: 'Industries', href: '/#industries' },
-  { label: 'Portfolio', href: '/#portfolio' },
+  { label: 'Industries', href: '/industries' },
+  { label: 'Portfolio', href: '/portfolio' },
   { label: 'Careers', href: '/#careers' },
   { label: 'Contact', href: '/contact' },
 ];
