@@ -70,6 +70,11 @@ const ancillaryWorks = [
 { title: 'Bleachers & Seating', desc: 'Spectator seating and bleacher systems for club and tournament facilities.' },
 { title: 'Pole Padding', desc: 'Safety padding for net posts and structural poles.' }];
 
+const projects = [
+  { name: 'Professional Tennis Court', type: 'Project Concept', desc: 'ITF-standard outdoor tennis court with acrylic surface, perimeter fencing, LED lighting, and net system.' },
+  { name: 'Tennis Academy', type: 'Proposed Facility', desc: 'Multi-court tennis academy with acrylic and PP tile surfaces, coaching areas, and spectator infrastructure.' },
+  { name: 'Outdoor Tennis Facility', type: 'Illustrative Project', desc: 'Outdoor tennis facility with multiple courts, all-weather acrylic surfaces, and complete ancillary works.' },
+];
 
 export default function TennisPage() {
   return (
@@ -134,8 +139,28 @@ export default function TennisPage() {
           </div>
         </section>
 
-        {/* Our Products */}
+        {/* Projects */}
         <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-widest">Selected Projects</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mt-3">Tennis Facility Concepts</h2>
+              <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm leading-relaxed">Illustrative project concepts representing the scope and type of tennis infrastructure we design and build.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {projects?.map((project) => (
+                <div key={project?.name} className="bg-[#F3F3F3] rounded-2xl p-6 border border-gray-100 hover:border-[#C6A15B]/30 hover:shadow-lg transition-all">
+                  <span className="inline-block bg-[#C6A15B]/15 text-[#C6A15B] text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{project?.type}</span>
+                  <h3 className="font-bold text-[#1F3A5F] text-lg mb-2">{project?.name}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{project?.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Products */}
+        <section className="py-20 bg-[#F3F3F3]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-widest">Our Products</span>
@@ -234,6 +259,7 @@ export default function TennisPage() {
       </main>
       <Footer />
       <FloatingButtons />
-    </>);
+    </>
+  );
 
 }

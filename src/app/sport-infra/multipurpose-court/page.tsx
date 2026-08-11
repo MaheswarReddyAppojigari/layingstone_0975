@@ -78,6 +78,11 @@ const ancillaryWorks = [
 { title: 'Shell Construction', desc: 'Complete civil and structural shell construction for indoor multi-sport halls.' },
 { title: '2D & 3D Design', desc: 'Detailed court layout drawings and 3D visualisations before construction.' }];
 
+const projects = [
+  { name: 'Multi-Sport Court', type: 'Project Concept', desc: 'Versatile multi-sport court accommodating football, basketball, tennis, and badminton on a single PP tile surface.' },
+  { name: 'School Sports Court', type: 'Proposed Facility', desc: 'School multi-sport court with acrylic or PP tile surface, multi-sport line markings, and perimeter fencing.' },
+  { name: 'Community Sports Facility', type: 'Illustrative Project', desc: 'Community multi-sport facility with multiple court configurations, lighting, and spectator infrastructure.' },
+];
 
 export default function MultipurposeCourtPage() {
   return (
@@ -155,6 +160,26 @@ export default function MultipurposeCourtPage() {
                   {sport}
                 </span>
               )}
+            </div>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-widest">Selected Projects</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mt-3">Multipurpose Court Concepts</h2>
+              <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm leading-relaxed">Illustrative project concepts representing the scope and type of multipurpose court infrastructure we design and build.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {projects?.map((project) => (
+                <div key={project?.name} className="bg-[#F3F3F3] rounded-2xl p-6 border border-gray-100 hover:border-[#C6A15B]/30 hover:shadow-lg transition-all">
+                  <span className="inline-block bg-[#C6A15B]/15 text-[#C6A15B] text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{project?.type}</span>
+                  <h3 className="font-bold text-[#1F3A5F] text-lg mb-2">{project?.name}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{project?.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -248,6 +273,7 @@ export default function MultipurposeCourtPage() {
       </main>
       <Footer />
       <FloatingButtons />
-    </>);
+    </>
+  );
 
 }

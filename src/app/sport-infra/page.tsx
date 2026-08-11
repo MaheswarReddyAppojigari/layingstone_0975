@@ -10,221 +10,332 @@ const sports = [
 {
   slug: 'badminton',
   title: 'Badminton',
-  subtitle: 'BWF Compliant Courts',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <rect x="8" y="28" width="36" height="4" rx="2" fill="#C6A15B" opacity="0.3" />
-        <rect x="10" y="29" width="32" height="2" rx="1" fill="#C6A15B" />
-        <line x1="26" y1="30" x2="52" y2="8" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
-        <ellipse cx="54" cy="6" rx="5" ry="3" fill="#C6A15B" opacity="0.4" stroke="#C6A15B" strokeWidth="1.5" />
-        <line x1="50" y1="4" x2="58" y2="4" stroke="#C6A15B" strokeWidth="1" opacity="0.6" />
-        <line x1="50" y1="6" x2="58" y2="6" stroke="#C6A15B" strokeWidth="1" opacity="0.6" />
-        <line x1="50" y1="8" x2="58" y2="8" stroke="#C6A15B" strokeWidth="1" opacity="0.6" />
-        <rect x="8" y="44" width="36" height="1.5" rx="0.75" fill="#1F3A5F" opacity="0.3" />
-        <rect x="8" y="50" width="36" height="1.5" rx="0.75" fill="#1F3A5F" opacity="0.3" />
-        <line x1="14" y1="44" x2="14" y2="52" stroke="#1F3A5F" strokeWidth="1" opacity="0.3" />
-        <line x1="26" y1="44" x2="26" y2="52" stroke="#1F3A5F" strokeWidth="1" opacity="0.3" />
-        <line x1="38" y1="44" x2="38" y2="52" stroke="#1F3A5F" strokeWidth="1" opacity="0.3" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Racket */}
+        <ellipse cx="20" cy="20" rx="11" ry="13" stroke="#1F3A5F" strokeWidth="2.2" fill="none" />
+        <line x1="14" y1="14" x2="26" y2="26" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="14" y1="20" x2="26" y2="20" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="14" y1="26" x2="26" y2="14" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="20" y1="14" x2="20" y2="26" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="20" y1="33" x2="28" y2="50" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Shuttlecock */}
+        <circle cx="46" cy="44" r="4" fill="#C6A15B" opacity="0.9" />
+        <line x1="46" y1="40" x2="42" y2="28" stroke="#1F3A5F" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="46" y1="40" x2="46" y2="27" stroke="#1F3A5F" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="46" y1="40" x2="50" y2="28" stroke="#1F3A5F" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="42" y1="28" x2="50" y2="28" stroke="#1F3A5F" strokeWidth="1.2" strokeLinecap="round" />
+      </svg>
 
-  desc: 'BWF-compliant courts with premium PP interlocking tiles, acrylic, PVC, and wooden flooring options.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'football',
   title: 'Football',
-  subtitle: 'FIFA Standard Pitches',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <circle cx="32" cy="32" r="18" stroke="#1F3A5F" strokeWidth="2" />
-        <polygon points="32,18 36,26 44,26 38,32 40,40 32,35 24,40 26,32 20,26 28,26" fill="none" stroke="#C6A15B" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="32" cy="32" r="3" fill="#C6A15B" opacity="0.5" />
-        <line x1="8" y1="52" x2="56" y2="52" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-        <line x1="12" y1="52" x2="12" y2="58" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-        <line x1="52" y1="52" x2="52" y2="58" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        <circle cx="32" cy="32" r="22" stroke="#1F3A5F" strokeWidth="2.2" fill="none" />
+        <polygon points="32,18 37,26 45,26 39,33 41,42 32,37 23,42 25,33 19,26 27,26" fill="#C6A15B" opacity="0.85" stroke="#1F3A5F" strokeWidth="1.2" strokeLinejoin="round" />
+      </svg>
 
-  desc: 'Artificial turf pitches with premium infill systems, drainage, fencing, and lighting solutions.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'tennis',
   title: 'Tennis',
-  subtitle: 'ITF Certified Courts',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <circle cx="32" cy="32" r="10" stroke="#1F3A5F" strokeWidth="2" />
-        <path d="M22 32 Q27 24 32 32 Q37 40 42 32" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <rect x="6" y="46" width="52" height="2" rx="1" fill="#1F3A5F" opacity="0.2" />
-        <rect x="6" y="50" width="52" height="2" rx="1" fill="#1F3A5F" opacity="0.2" />
-        <line x1="32" y1="46" x2="32" y2="52" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-        <line x1="6" y1="46" x2="6" y2="52" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-        <line x1="58" y1="46" x2="58" y2="52" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-        <line x1="6" y1="14" x2="58" y2="14" stroke="#1F3A5F" strokeWidth="1" opacity="0.2" />
-        <line x1="6" y1="14" x2="6" y2="52" stroke="#1F3A5F" strokeWidth="1" opacity="0.2" />
-        <line x1="58" y1="14" x2="58" y2="52" stroke="#1F3A5F" strokeWidth="1" opacity="0.2" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Racket head */}
+        <ellipse cx="22" cy="22" rx="14" ry="16" stroke="#1F3A5F" strokeWidth="2.2" fill="none" />
+        <path d="M10 22 Q16 14 22 22 Q28 30 34 22" stroke="#C6A15B" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+        <line x1="22" y1="38" x2="30" y2="54" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Ball */}
+        <circle cx="48" cy="46" r="8" stroke="#1F3A5F" strokeWidth="2" fill="none" />
+        <path d="M41 42 Q44 46 41 50" stroke="#C6A15B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        <path d="M55 42 Q52 46 55 50" stroke="#C6A15B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      </svg>
 
-  desc: 'ITF-standard courts with acrylic, PP interlocking, PVC, and wooden surface options.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'pickleball',
   title: 'PickleBall',
-  subtitle: 'USA Pickleball Standard',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <circle cx="32" cy="28" r="12" stroke="#1F3A5F" strokeWidth="2" />
-        <circle cx="32" cy="28" r="4" fill="#C6A15B" opacity="0.3" stroke="#C6A15B" strokeWidth="1.5" />
-        <circle cx="26" cy="22" r="2" fill="#C6A15B" opacity="0.4" />
-        <circle cx="38" cy="22" r="2" fill="#C6A15B" opacity="0.4" />
-        <circle cx="26" cy="34" r="2" fill="#C6A15B" opacity="0.4" />
-        <circle cx="38" cy="34" r="2" fill="#C6A15B" opacity="0.4" />
-        <rect x="29" y="40" width="6" height="14" rx="3" fill="#1F3A5F" opacity="0.6" />
-        <rect x="24" y="52" width="16" height="3" rx="1.5" fill="#1F3A5F" opacity="0.4" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Paddle - flat round head */}
+        <ellipse cx="22" cy="22" rx="13" ry="14" stroke="#1F3A5F" strokeWidth="2.2" fill="#C6A15B" fillOpacity="0.15" />
+        <circle cx="18" cy="18" r="2" fill="#1F3A5F" opacity="0.4" />
+        <circle cx="26" cy="18" r="2" fill="#1F3A5F" opacity="0.4" />
+        <circle cx="18" cy="26" r="2" fill="#1F3A5F" opacity="0.4" />
+        <circle cx="26" cy="26" r="2" fill="#1F3A5F" opacity="0.4" />
+        <circle cx="22" cy="22" r="2" fill="#1F3A5F" opacity="0.4" />
+        <line x1="22" y1="36" x2="30" y2="52" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Ball */}
+        <circle cx="48" cy="46" r="8" stroke="#1F3A5F" strokeWidth="2" fill="none" />
+        <circle cx="45" cy="43" r="1.5" fill="#C6A15B" opacity="0.7" />
+        <circle cx="51" cy="43" r="1.5" fill="#C6A15B" opacity="0.7" />
+        <circle cx="48" cy="49" r="1.5" fill="#C6A15B" opacity="0.7" />
+      </svg>
 
-  desc: 'Precision-engineered pickleball courts with acrylic and PP tile surfaces, built to USA Pickleball standards.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'basketball',
   title: 'Basketball',
-  subtitle: 'FIBA Compliant Courts',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <circle cx="32" cy="30" r="14" stroke="#1F3A5F" strokeWidth="2" />
-        <line x1="18" y1="30" x2="46" y2="30" stroke="#C6A15B" strokeWidth="1.5" />
-        <path d="M32 16 Q40 23 40 30 Q40 37 32 44" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <path d="M32 16 Q24 23 24 30 Q24 37 32 44" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <rect x="26" y="6" width="12" height="2" rx="1" fill="#1F3A5F" opacity="0.5" />
-        <rect x="30" y="8" width="4" height="8" rx="1" fill="#1F3A5F" opacity="0.3" />
-        <rect x="6" y="48" width="52" height="2" rx="1" fill="#1F3A5F" opacity="0.2" />
-        <line x1="6" y1="48" x2="6" y2="54" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-        <line x1="58" y1="48" x2="58" y2="54" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.3" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        <circle cx="32" cy="32" r="22" stroke="#1F3A5F" strokeWidth="2.2" fill="none" />
+        <line x1="10" y1="32" x2="54" y2="32" stroke="#C6A15B" strokeWidth="1.8" />
+        <path d="M32 10 Q42 21 42 32 Q42 43 32 54" stroke="#C6A15B" strokeWidth="1.8" fill="none" />
+        <path d="M32 10 Q22 21 22 32 Q22 43 32 54" stroke="#C6A15B" strokeWidth="1.8" fill="none" />
+      </svg>
 
-  desc: 'FIBA-compliant courts with PP interlocking tiles, acrylic, PVC, and premium wooden flooring.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'squash',
   title: 'Squash',
-  subtitle: 'Professional Indoor Courts',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <rect x="10" y="10" width="44" height="44" rx="2" stroke="#1F3A5F" strokeWidth="2" fill="none" />
-        <rect x="10" y="10" width="44" height="14" rx="2" fill="#C6A15B" opacity="0.15" />
-        <line x1="10" y1="24" x2="54" y2="24" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.5" />
-        <line x1="10" y1="44" x2="54" y2="44" stroke="#1F3A5F" strokeWidth="1" opacity="0.3" />
-        <line x1="32" y1="24" x2="32" y2="54" stroke="#1F3A5F" strokeWidth="1" opacity="0.3" />
-        <circle cx="38" cy="36" r="4" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <circle cx="38" cy="36" r="1.5" fill="#C6A15B" opacity="0.5" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Racket */}
+        <ellipse cx="20" cy="20" rx="12" ry="14" stroke="#1F3A5F" strokeWidth="2.2" fill="none" />
+        <line x1="13" y1="13" x2="27" y2="27" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="13" y1="20" x2="27" y2="20" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="13" y1="27" x2="27" y2="13" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="20" y1="13" x2="20" y2="27" stroke="#C6A15B" strokeWidth="1.2" opacity="0.7" />
+        <line x1="20" y1="34" x2="28" y2="52" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Ball */}
+        <circle cx="46" cy="46" r="8" fill="#C6A15B" opacity="0.85" stroke="#1F3A5F" strokeWidth="1.8" />
+      </svg>
 
-  desc: 'Professional squash courts with maple wood, teak wood, and high-performance PVC flooring solutions.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'athletic-track',
   title: 'Athletic Track',
-  subtitle: 'World Athletics Standard',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <ellipse cx="32" cy="36" rx="22" ry="14" stroke="#1F3A5F" strokeWidth="2" fill="none" />
-        <ellipse cx="32" cy="36" rx="16" ry="8" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <line x1="10" y1="36" x2="54" y2="36" stroke="#1F3A5F" strokeWidth="1" opacity="0.2" />
-        <line x1="10" y1="32" x2="54" y2="32" stroke="#1F3A5F" strokeWidth="0.8" opacity="0.15" />
-        <line x1="10" y1="40" x2="54" y2="40" stroke="#1F3A5F" strokeWidth="0.8" opacity="0.15" />
-        <circle cx="32" cy="20" r="4" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <line x1="32" y1="24" x2="32" y2="30" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.6" />
-        <line x1="28" y1="27" x2="36" y2="27" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.6" />
-        <line x1="30" y1="30" x2="28" y2="36" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.6" />
-        <line x1="34" y1="30" x2="36" y2="36" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.6" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Running figure */}
+        <circle cx="38" cy="12" r="4" stroke="#1F3A5F" strokeWidth="2" fill="none" />
+        <line x1="38" y1="16" x2="34" y2="28" stroke="#1F3A5F" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="34" y1="28" x2="26" y2="36" stroke="#1F3A5F" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="34" y1="28" x2="42" y2="36" stroke="#1F3A5F" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="30" y1="22" x2="42" y2="20" stroke="#1F3A5F" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="26" y1="36" x2="22" y2="46" stroke="#1F3A5F" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="42" y1="36" x2="46" y2="46" stroke="#1F3A5F" strokeWidth="2.2" strokeLinecap="round" />
+        {/* Track line */}
+        <line x1="8" y1="52" x2="56" y2="52" stroke="#C6A15B" strokeWidth="2.5" strokeLinecap="round" />
+        <line x1="8" y1="56" x2="56" y2="56" stroke="#C6A15B" strokeWidth="1.5" strokeLinecap="round" opacity="0.5" />
+      </svg>
 
-  desc: 'World Athletics-standard synthetic athletic tracks engineered for consistent performance and durability.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'cricket',
   title: 'Cricket',
-  subtitle: 'Professional Pitches & Nets',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <rect x="28" y="8" width="8" height="3" rx="1" fill="#1F3A5F" opacity="0.5" />
-        <line x1="30" y1="11" x2="30" y2="52" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-        <line x1="34" y1="11" x2="34" y2="52" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-        <line x1="32" y1="8" x2="32" y2="11" stroke="#1F3A5F" strokeWidth="1" opacity="0.3" />
-        <line x1="28" y1="20" x2="36" y2="20" stroke="#C6A15B" strokeWidth="1.5" opacity="0.7" />
-        <line x1="28" y1="44" x2="36" y2="44" stroke="#C6A15B" strokeWidth="1.5" opacity="0.7" />
-        <ellipse cx="32" cy="36" rx="20" ry="8" stroke="#1F3A5F" strokeWidth="1.5" fill="none" opacity="0.3" />
-        <path d="M16 44 Q32 52 48 44" stroke="#C6A15B" strokeWidth="1.5" fill="none" opacity="0.5" />
-        <circle cx="44" cy="30" r="4" stroke="#C6A15B" strokeWidth="1.5" fill="none" />
-        <line x1="40" y1="34" x2="22" y2="48" stroke="#1F3A5F" strokeWidth="2" strokeLinecap="round" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Bat */}
+        <rect x="26" y="8" width="10" height="30" rx="5" fill="#C6A15B" opacity="0.85" stroke="#1F3A5F" strokeWidth="1.8" />
+        <rect x="28" y="38" width="6" height="14" rx="3" fill="#1F3A5F" opacity="0.7" />
+        {/* Ball */}
+        <circle cx="46" cy="46" r="8" stroke="#1F3A5F" strokeWidth="2" fill="none" />
+        <path d="M40 42 Q43 46 40 50" stroke="#C6A15B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        <path d="M52 42 Q49 46 52 50" stroke="#C6A15B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      </svg>
 
-  desc: 'Professional cricket pitches and practice nets with premium artificial turf and BCCI-standard construction.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'padel',
   title: 'Padel',
-  subtitle: 'FIP Certified Courts',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <rect x="8" y="16" width="48" height="32" rx="2" stroke="#1F3A5F" strokeWidth="2" fill="none" />
-        <rect x="8" y="16" width="12" height="32" fill="#C6A15B" opacity="0.1" stroke="#C6A15B" strokeWidth="1" strokeDasharray="2 2" />
-        <rect x="44" y="16" width="12" height="32" fill="#C6A15B" opacity="0.1" stroke="#C6A15B" strokeWidth="1" strokeDasharray="2 2" />
-        <line x1="32" y1="16" x2="32" y2="48" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.5" />
-        <line x1="8" y1="32" x2="56" y2="32" stroke="#C6A15B" strokeWidth="1.5" opacity="0.6" />
-        <circle cx="32" cy="32" r="3" fill="#C6A15B" opacity="0.4" />
-        <line x1="8" y1="16" x2="8" y2="10" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-        <line x1="56" y1="16" x2="56" y2="10" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-        <line x1="8" y1="48" x2="8" y2="54" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-        <line x1="56" y1="48" x2="56" y2="54" stroke="#1F3A5F" strokeWidth="1.5" opacity="0.4" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Padel paddle - solid round */}
+        <ellipse cx="20" cy="20" rx="13" ry="14" stroke="#1F3A5F" strokeWidth="2.2" fill="#C6A15B" fillOpacity="0.2" />
+        <circle cx="16" cy="16" r="2.5" fill="#1F3A5F" opacity="0.35" />
+        <circle cx="24" cy="16" r="2.5" fill="#1F3A5F" opacity="0.35" />
+        <circle cx="16" cy="24" r="2.5" fill="#1F3A5F" opacity="0.35" />
+        <circle cx="24" cy="24" r="2.5" fill="#1F3A5F" opacity="0.35" />
+        <circle cx="20" cy="20" r="2.5" fill="#1F3A5F" opacity="0.35" />
+        <line x1="20" y1="34" x2="28" y2="52" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Ball */}
+        <circle cx="48" cy="46" r="8" stroke="#1F3A5F" strokeWidth="2" fill="none" />
+        <path d="M41 42 Q44 46 41 50" stroke="#C6A15B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        <path d="M55 42 Q52 46 55 50" stroke="#C6A15B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      </svg>
 
-  desc: 'FIP-certified padel courts with toughened glass panels, steel structure, and premium artificial turf surface.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'skating-rink',
   title: 'Skating Rink',
-  subtitle: 'All-Weather PP Tile Surface',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <ellipse cx="32" cy="36" rx="24" ry="14" stroke="#1F3A5F" strokeWidth="2" fill="none" />
-        <ellipse cx="32" cy="36" rx="24" ry="14" fill="#C6A15B" opacity="0.05" />
-        <line x1="8" y1="36" x2="56" y2="36" stroke="#1F3A5F" strokeWidth="0.8" opacity="0.2" />
-        <line x1="10" y1="30" x2="54" y2="30" stroke="#1F3A5F" strokeWidth="0.8" opacity="0.15" />
-        <line x1="10" y1="42" x2="54" y2="42" stroke="#1F3A5F" strokeWidth="0.8" opacity="0.15" />
-        <path d="M20 28 Q26 22 32 28 Q38 34 44 28" stroke="#C6A15B" strokeWidth="2" fill="none" strokeLinecap="round" />
-        <line x1="18" y1="28" x2="14" y2="32" stroke="#C6A15B" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="46" y1="28" x2="50" y2="32" stroke="#C6A15B" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        {/* Ice skate boot */}
+        <path d="M14 20 L14 38 Q14 42 18 42 L44 42 Q50 42 52 38 L52 36 Q52 32 48 32 L28 32 L28 20 Q28 16 24 16 L18 16 Q14 16 14 20 Z" stroke="#1F3A5F" strokeWidth="2" fill="#C6A15B" fillOpacity="0.2" />
+        {/* Blade */}
+        <line x1="16" y1="44" x2="52" y2="44" stroke="#1F3A5F" strokeWidth="2.5" strokeLinecap="round" />
+        <line x1="12" y1="46" x2="54" y2="46" stroke="#C6A15B" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
+      </svg>
 
-  desc: 'Durable PP interlocking tile skating rinks with FIBA-certified surfaces, all-weather performance, and low maintenance.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
 },
 {
   slug: 'multipurpose-court',
   title: 'Multipurpose Court',
-  subtitle: 'Multi-Sport Versatility',
   icon:
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-        <rect x="8" y="12" width="48" height="40" rx="2" stroke="#1F3A5F" strokeWidth="2" fill="none" />
-        <line x1="32" y1="12" x2="32" y2="52" stroke="#C6A15B" strokeWidth="1.5" opacity="0.6" />
-        <line x1="8" y1="32" x2="56" y2="32" stroke="#C6A15B" strokeWidth="1.5" opacity="0.6" />
-        <circle cx="32" cy="32" r="8" stroke="#1F3A5F" strokeWidth="1.5" fill="none" opacity="0.5" />
-        <rect x="14" y="18" width="12" height="8" rx="1" stroke="#C6A15B" strokeWidth="1" fill="none" opacity="0.5" />
-        <rect x="38" y="18" width="12" height="8" rx="1" stroke="#C6A15B" strokeWidth="1" fill="none" opacity="0.5" />
-        <rect x="14" y="38" width="12" height="8" rx="1" stroke="#C6A15B" strokeWidth="1" fill="none" opacity="0.5" />
-        <rect x="38" y="38" width="12" height="8" rx="1" stroke="#C6A15B" strokeWidth="1" fill="none" opacity="0.5" />
-      </svg>,
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
+        <rect x="8" y="10" width="48" height="44" rx="2" stroke="#1F3A5F" strokeWidth="2.2" fill="none" />
+        <line x1="32" y1="10" x2="32" y2="54" stroke="#C6A15B" strokeWidth="1.8" opacity="0.8" />
+        <line x1="8" y1="32" x2="56" y2="32" stroke="#C6A15B" strokeWidth="1.8" opacity="0.8" />
+        <circle cx="32" cy="32" r="9" stroke="#1F3A5F" strokeWidth="1.8" fill="none" opacity="0.6" />
+        <rect x="8" y="18" width="10" height="8" rx="1" stroke="#1F3A5F" strokeWidth="1.2" fill="none" opacity="0.5" />
+        <rect x="46" y="18" width="10" height="8" rx="1" stroke="#1F3A5F" strokeWidth="1.2" fill="none" opacity="0.5" />
+        <rect x="8" y="38" width="10" height="8" rx="1" stroke="#1F3A5F" strokeWidth="1.2" fill="none" opacity="0.5" />
+        <rect x="46" y="38" width="10" height="8" rx="1" stroke="#1F3A5F" strokeWidth="1.2" fill="none" opacity="0.5" />
+      </svg>
 
-  desc: 'Versatile multi-sport courts accommodating football, basketball, tennis, badminton, and volleyball on a single surface.',
-  color: 'from-[#1F3A5F]/5 to-[#C6A15B]/5'
+}];
+
+
+const productCategories = [
+{
+  category: 'Artificial Turf',
+  products: [
+  {
+    name: 'Artificial Turf',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_16c5c8e41-1768566786833.png",
+    alt: 'Premium artificial turf surface for sports facilities',
+    description: 'Engineered for performance, durability, and all-weather play. Specialized turf for football, cricket, hockey, and multi-sport applications.',
+    specs: ['Pile Height: 10–60mm', 'Dtex: 8,000–20,000', 'Backing: 3 Layer PU/Latex', 'Warranty: 5–8 years'],
+    tag: 'All-Weather'
+  },
+  {
+    name: 'Hockey Turf',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_164f5c8bb-1786449706486.png",
+    alt: 'Specialized hockey turf surface for professional play',
+    description: 'Dedicated synthetic turf engineered for hockey — consistent ball roll, excellent traction, and all-weather performance.',
+    specs: ['Pile Height: 10–60mm', 'Dtex: 8,000–20,000', 'Backing: 3 Layer PU/Latex', 'Warranty: 5–8 years'],
+    tag: 'Hockey Specific'
+  }]
+
+},
+{
+  category: 'Acrylic Sports Flooring',
+  products: [
+  {
+    name: 'Standard Acrylic Flooring',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_12da2d09a-1786449708330.png",
+    alt: 'Standard 5-layer acrylic sports flooring for outdoor courts',
+    description: 'Standard 5-layer acrylic coating system. Excellent grip, consistent ball bounce, UV resistant, and low maintenance.',
+    specs: ['System: 5-Layer Acrylic', 'Finish: Anti-slip', 'Weather: All-weather resistant', 'UV Resistant: Yes'],
+    tag: 'Outdoor Courts'
+  },
+  {
+    name: 'Cushion Acrylic Flooring',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d36d9a10-1786449708101.png",
+    alt: 'Cushion 8-layer acrylic sports flooring with enhanced shock absorption',
+    description: 'Premium 8-layer cushion acrylic system with enhanced shock absorption. Ideal for tennis, basketball, and multi-purpose courts.',
+    specs: ['System: 8-Layer Cushion Acrylic', 'Shock Absorption: Enhanced', 'Colours: Wide range', 'Brands: Pacecourt, KDF, Unica'],
+    tag: 'Premium Cushion'
+  }]
+
+},
+{
+  category: 'PP Interlocking Tiles',
+  products: [
+  {
+    name: 'PP Interlocking Tiles',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_11becc0f5-1785642771729.png",
+    alt: 'PP interlocking tiles for multi-sport court surfaces',
+    description: 'Double-layer polypropylene tiles engineered for durability, shock absorption, and superior grip. FIBA, ITF, and LABOSPORT certified.',
+    specs: ['Size: 1×1 ft per tile', 'Thickness: 8–15mm', 'Load Capacity: 20 Ton/Tile', 'Usage Life: 8–10 years'],
+    tag: 'FIBA & ITF Certified'
+  }]
+
+},
+{
+  category: 'PVC & Wooden Flooring',
+  products: [
+  {
+    name: 'PVC Flooring — 4.5mm',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_196d50468-1784878139241.png",
+    alt: 'PVC sports flooring 4.5mm for indoor courts',
+    description: 'Indoor PVC surface providing excellent comfort and grip. Ideal for badminton, basketball, and multi-sport indoor courts.',
+    specs: ['Thickness: 4.5mm', 'Grade: Comfort & Grip', 'Usage: Indoor courts', 'Maintenance: Low'],
+    tag: 'Indoor'
+  },
+  {
+    name: 'PVC Flooring — 6mm & 7mm',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_11becc0f5-1785642771729.png",
+    alt: 'PVC sports flooring 6mm and 7mm for high performance indoor courts',
+    description: 'High-performance PVC flooring with superior cushioning. 6mm for better cushion; 7mm for maximum performance.',
+    specs: ['Thickness: 6mm / 7mm', '6mm: Better Cushion', '7mm: High Performance', 'Usage: Indoor courts'],
+    tag: 'High Performance'
+  },
+  {
+    name: 'Maple Wood Flooring',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_11a08be07-1768765571042.png",
+    alt: 'Premium maple wood sports flooring for professional courts',
+    description: 'Premium maple wood sports flooring with superior shock absorption and professional play standards. Ideal for basketball, badminton, and squash.',
+    specs: ['Material: Maple Wood', 'Finish: Premium', 'Shock Absorption: Superior', 'Standards: FIBA, BWF'],
+    tag: 'Premium Wood'
+  },
+  {
+    name: 'Teak Wood Flooring',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_19730cdc6-1786449707952.png",
+    alt: 'Teak wood sports flooring with high durability for indoor courts',
+    description: 'High-durability teak wood flooring for professional indoor courts. Excellent longevity and performance characteristics.',
+    specs: ['Material: Teak Wood', 'Finish: High Durability', 'Shock Absorption: Superior', 'Standards: FIBA, BWF'],
+    tag: 'High Durability'
+  }]
+
+},
+{
+  category: 'EPDM / FlexiPlay Tiles',
+  products: [
+  {
+    name: 'EPDM Rubber Flooring',
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1f27f33b0-1784878137580.png',
+    alt: 'EPDM rubber flooring tiles for play areas and gym',
+    description: 'Premium EPDM rubber flooring with superior shock absorption, anti-slip safety, and vibrant finishes. Ideal for kids\' play areas, gyms, and jogging tracks.',
+    specs: ['Thickness: 15–40mm', 'Material: EPDM, SBR Rubber', 'Slip Resistant: Yes', 'Colours: Multi-colour'],
+    tag: 'Play Areas & Gym'
+  },
+  {
+    name: 'EPDM Interlock Tiles',
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1f27f33b0-1784878137580.png',
+    alt: 'EPDM interlocking rubber tiles for outdoor play areas',
+    description: 'Interlocking EPDM rubber tiles for easy installation and customizable layouts. Durable, weather-resistant, and low maintenance.',
+    specs: ['Type: Interlock System', 'Material: EPDM Granules', 'Weather: All-weather', 'Size: Customizable'],
+    tag: 'Easy Install'
+  }]
+
+},
+{
+  category: 'Athletic Track',
+  products: [
+  {
+    name: 'PU Athletic Track Surface',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_111beca57-1786449707671.png",
+    alt: 'PU synthetic athletic track surface for running tracks',
+    description: 'Polyurethane (PU) athletic track surface engineered to World Athletics standards. Consistent performance, excellent traction, and all-weather durability.',
+    specs: ['Material: Polyurethane (PU)', 'Standard: World Athletics', 'Weather: All-weather', 'Performance: Consistent'],
+    tag: 'World Athletics Standard'
+  }]
+
+},
+{
+  category: 'Padel Court',
+  products: [
+  {
+    name: 'Padel Court — Full Panoramic',
+    image: "https://images.unsplash.com/photo-1709587824637-2126d83d3216",
+    alt: 'Full panoramic padel court with glass panels and artificial turf',
+    description: 'FIP-certified padel court with full panoramic glass panels. 20m×10m×4m steel structure with 12mm toughened glass and 13mm artificial turf.',
+    specs: ['Size: 20m × 10m × 4m', 'Glass: 12mm Toughened (18 panels)', 'Turf: 13mm pile, Dtex 8,800', 'Lighting: 8 LED curved lights'],
+    tag: 'FIP Certified'
+  },
+  {
+    name: 'Padel Court — Standard',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_18802a80d-1776552673942.png",
+    alt: 'Standard padel court with steel structure and artificial turf',
+    description: 'Standard FIP-compliant padel court with steel structure, mesh fencing, and premium artificial turf surface.',
+    specs: ['Size: 20m × 10m × 4m', 'Structure: 100×50mm columns', 'Mesh: 4mm thickness', 'Turf: 13mm pile'],
+    tag: 'FIP Compliant'
+  }]
+
 }];
 
 
@@ -237,34 +348,13 @@ const faqs = [
 
 
 const heroSlides = [
-{
-  url: "https://images.unsplash.com/photo-1731872504522-0ad9da30defc",
-  alt: 'Professional football pitch with green artificial turf under stadium lights'
-},
-{
-  url: "https://images.unsplash.com/photo-1659427948877-526b77c74732",
-  alt: 'Outdoor tennis court with blue acrylic surface and white court lines'
-},
-{
-  url: "https://img.rocket.new/generatedImages/rocket_gen_img_11a08be07-1768765571042.png",
-  alt: 'Professional basketball court with hardwood flooring and arena lighting'
-},
-{
-  url: "https://img.rocket.new/generatedImages/rocket_gen_img_15dfef6f4-1772710925042.png",
-  alt: 'Cricket pitch with well-maintained turf and boundary markings'
-},
-{
-  url: "https://images.unsplash.com/photo-1723186051179-69b1dfe2a1f9",
-  alt: 'Athletic running track with red synthetic surface and lane markings'
-},
-{
-  url: "https://img.rocket.new/generatedImages/rocket_gen_img_1c55d211f-1764688168221.png",
-  alt: 'Indoor badminton court with wooden flooring and overhead lighting'
-},
-{
-  url: "https://img.rocket.new/generatedImages/rocket_gen_img_1698ab1c7-1772230105707.png",
-  alt: 'Padel court with glass panels and artificial turf surface at sunset'
-}];
+{ url: 'https://images.unsplash.com/photo-1731872504522-0ad9da30defc', alt: 'Professional football pitch with green artificial turf under stadium lights' },
+{ url: 'https://images.unsplash.com/photo-1659427948877-526b77c74732', alt: 'Outdoor tennis court with blue acrylic surface and white court lines' },
+{ url: 'https://img.rocket.new/generatedImages/rocket_gen_img_11a08be07-1768765571042.png', alt: 'Professional basketball court with hardwood flooring and arena lighting' },
+{ url: 'https://img.rocket.new/generatedImages/rocket_gen_img_15dfef6f4-1772710925042.png', alt: 'Cricket pitch with well-maintained turf and boundary markings' },
+{ url: 'https://images.unsplash.com/photo-1723186051179-69b1dfe2a1f9', alt: 'Athletic running track with red synthetic surface and lane markings' },
+{ url: 'https://img.rocket.new/generatedImages/rocket_gen_img_1c55d211f-1764688168221.png', alt: 'Indoor badminton court with wooden flooring and overhead lighting' },
+{ url: 'https://img.rocket.new/generatedImages/rocket_gen_img_1698ab1c7-1772230105707.png', alt: 'Padel court with glass panels and artificial turf surface at sunset' }];
 
 
 export default function SportInfraPage() {
@@ -292,29 +382,17 @@ export default function SportInfraPage() {
       <main>
         {/* Hero */}
         <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden bg-[#1F3A5F]">
-          {/* Slideshow background layers */}
-          {/* Current slide */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-[800ms] ease-in-out"
-            style={{
-              backgroundImage: `url('${heroSlides[currentSlide].url}')`,
-              opacity: isFading ? 0 : 1
-            }}
+            style={{ backgroundImage: `url('${heroSlides[currentSlide].url}')`, opacity: isFading ? 0 : 1 }}
             aria-hidden="true" />
           
-          {/* Next slide (fades in underneath) */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url('${heroSlides[nextSlide].url}')`,
-              opacity: 1,
-              zIndex: -1
-            }}
+            style={{ backgroundImage: `url('${heroSlides[nextSlide].url}')`, opacity: 1, zIndex: -1 }}
             aria-hidden="true" />
           
-          {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-[#1F3A5F]/65" style={{ zIndex: 1 }} />
-          {/* Existing gradient accent */}
           <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'radial-gradient(ellipse at 60% 40%, #C6A15B 0%, transparent 50%)', zIndex: 2 }} />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-28 pb-20" style={{ zIndex: 3 }}>
             <div className="inline-flex items-center gap-2 bg-[#C6A15B]/20 border border-[#C6A15B]/30 rounded-full px-4 py-1.5 mb-6">
@@ -353,7 +431,7 @@ export default function SportInfraPage() {
           </div>
         </section>
 
-        {/* Sports Grid */}
+        {/* Sports Grid — Simple Symbol + Name */}
         <section className="py-20 bg-[#F3F3F3]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
@@ -361,25 +439,17 @@ export default function SportInfraPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mt-3">Sports Infrastructure</h2>
               <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm leading-relaxed">Select a sport to explore our products, materials, and specifications.</p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
               {sports?.map((sport) =>
               <Link
                 key={sport.slug}
                 href={`/sport-infra/${sport.slug}`}
-                className="group bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 border border-gray-100 hover:border-[#C6A15B]/30 cursor-pointer">
+                className="group bg-white rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 border border-gray-100 hover:border-[#C6A15B]/40 cursor-pointer">
                 
                   <div className="mb-4 p-3 bg-gradient-to-br from-[#F3F3F3] to-[#C6A15B]/10 rounded-xl inline-flex group-hover:scale-110 transition-transform duration-300">
                     {sport.icon}
                   </div>
-                  <h3 className="font-bold text-[#1F3A5F] text-lg mb-1 group-hover:text-[#C6A15B] transition-colors">{sport.title}</h3>
-                  <p className="text-[#C6A15B] text-xs font-semibold uppercase tracking-wider mb-3">{sport.subtitle}</p>
-                  <p className="text-gray-500 text-sm leading-relaxed">{sport.desc}</p>
-                  <div className="mt-4 flex items-center gap-1 text-[#1F3A5F] text-sm font-semibold group-hover:gap-2 transition-all">
-                    <span>Explore</span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="font-bold text-[#1F3A5F] text-base group-hover:text-[#C6A15B] transition-colors leading-snug">{sport.title}</h3>
                 </Link>
               )}
             </div>
@@ -411,6 +481,81 @@ export default function SportInfraPage() {
           </div>
         </section>
 
+        {/* Sports Infrastructure Products */}
+        <section className="py-24 bg-[#F3F3F3]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-widest">Our Range</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mt-3">Sports Infrastructure Products</h2>
+              <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
+                Premium sports surface systems and infrastructure products — engineered for performance, certified to international standards, and built for long-term durability.
+              </p>
+            </div>
+
+            <div className="space-y-16">
+              {productCategories.map((cat) =>
+              <div key={cat.category}>
+                  {/* Category heading */}
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#C6A15B]/30" />
+                    <h3 className="text-lg font-bold text-[#1F3A5F] uppercase tracking-widest whitespace-nowrap px-2">{cat.category}</h3>
+                    <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#C6A15B]/30" />
+                  </div>
+
+                  <div className={`grid gap-6 ${cat.products.length === 1 ? 'md:grid-cols-1 max-w-md mx-auto' : cat.products.length === 2 ? 'md:grid-cols-2 max-w-3xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
+                    {cat.products.map((product) =>
+                  <div key={product.name} className="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group border border-gray-100 hover:border-[#C6A15B]/30">
+                        {/* Product image */}
+                        <div className="relative h-52 overflow-hidden bg-[#1F3A5F]/5">
+                          <img
+                        src={product.image}
+                        alt={product.alt}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#1F3A5F]/50 to-transparent" />
+                          <div className="absolute top-3 right-3">
+                            <span className="bg-[#C6A15B] text-[#1F3A5F] text-xs font-bold px-2.5 py-1 rounded-full">{product.tag}</span>
+                          </div>
+                          <div className="absolute bottom-4 left-4 right-4">
+                            <h4 className="text-white font-bold text-lg leading-snug">{product.name}</h4>
+                          </div>
+                        </div>
+                        {/* Product info */}
+                        <div className="p-5">
+                          <p className="text-gray-600 text-sm leading-relaxed mb-4">{product.description}</p>
+                          <div className="space-y-1.5">
+                            {product.specs.map((spec) =>
+                        <div key={spec} className="flex items-start gap-2">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#C6A15B] mt-1.5 flex-shrink-0" />
+                                <span className="text-xs text-[#1F3A5F] font-medium">{spec}</span>
+                              </div>
+                        )}
+                          </div>
+                        </div>
+                      </div>
+                  )}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Brand partners note */}
+            <div className="mt-16 bg-white rounded-2xl p-8 border border-gray-100">
+              <div className="text-center mb-6">
+                <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-widest">Trusted Partners</span>
+                <h3 className="text-xl font-bold text-[#1F3A5F] mt-2">Brands We Work With</h3>
+              </div>
+              <div className="flex flex-wrap justify-center gap-4">
+                {['CCGrass', 'Bellinturf', 'Maverick Turf', 'Pacecourt', 'KDF Sports Flooring Systems', 'Unica Sports Surface Experts'].map((brand) =>
+                <div key={brand} className="bg-[#F3F3F3] rounded-xl px-6 py-3 text-[#1F3A5F] font-semibold text-sm tracking-wide border border-gray-200">
+                    {brand}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQs */}
         <section className="py-20 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -428,9 +573,7 @@ export default function SportInfraPage() {
                     {faq?.q}
                     <span className={`text-[#C6A15B] text-xl transition-transform duration-200 ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
                   </button>
-                  {openFaq === i &&
-                <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">{faq?.a}</div>
-                }
+                  {openFaq === i && <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">{faq?.a}</div>}
                 </div>
               )}
             </div>
