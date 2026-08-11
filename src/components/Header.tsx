@@ -169,14 +169,14 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
-            <AppLogo size={88} />
+            <AppLogo size={104} />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-4">
             {navLinks.map((item) => (
               <div
                 key={item.label}
@@ -186,7 +186,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[#1F3A5F] hover:text-[#D4AF37] hover:bg-[#F3F3F3]"
+                  className="flex items-center gap-1 px-3 py-2 text-base font-medium rounded-lg transition-colors text-[#1F3A5F] hover:text-[#D4AF37] hover:bg-[#F3F3F3]"
                 >
                   {item.label}
                   {item.children && (
