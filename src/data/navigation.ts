@@ -17,8 +17,8 @@ export const navItems: NavItem[] = [
         label: 'Interiors',
         href: '#',
         children: [
-          { label: 'Residential Interiors', href: '/residential-interiors' },
-          { label: 'Commercial Interiors', href: '/commercial-interiors' },
+          { label: 'Residential Interiors', href: '/services/interiors/residential' },
+          { label: 'Commercial Interiors', href: '/services/interiors/commercial' },
         ],
       },
       { label: 'Sport Infra', href: '/sport-infra' },
