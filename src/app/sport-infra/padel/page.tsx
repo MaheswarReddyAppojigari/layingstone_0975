@@ -78,6 +78,11 @@ const ancillaryWorks = [
 { title: 'Mesh Fencing', desc: '4mm mesh fencing with 50×50×2mm frame for standard model courts.' },
 { title: 'Civil Base Work', desc: 'Complete civil foundation and base construction for padel court installation.' }];
 
+const projects = [
+  { name: 'Padel Courts', type: 'Project Concept', desc: 'FIP-certified padel courts with full panoramic glass panels, 13mm artificial turf, and LED lighting systems.' },
+  { name: 'Padel Club', type: 'Proposed Facility', desc: 'Multi-court padel club facility with panoramic and standard court models, changing rooms, and spectator areas.' },
+  { name: 'Padel Training Facility', type: 'Illustrative Project', desc: 'Dedicated padel training facility with standard model courts, coaching infrastructure, and complete ancillary works.' },
+];
 
 export default function PadelPage() {
   return (
@@ -160,6 +165,26 @@ export default function PadelPage() {
           </div>
         </section>
 
+        {/* Projects */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-widest">Selected Projects</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mt-3">Padel Facility Concepts</h2>
+              <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm leading-relaxed">Illustrative project concepts representing the scope and type of padel infrastructure we design and build.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {projects?.map((project) => (
+                <div key={project?.name} className="bg-[#F3F3F3] rounded-2xl p-6 border border-gray-100 hover:border-[#C6A15B]/30 hover:shadow-lg transition-all">
+                  <span className="inline-block bg-[#C6A15B]/15 text-[#C6A15B] text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{project?.type}</span>
+                  <h3 className="font-bold text-[#1F3A5F] text-lg mb-2">{project?.name}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{project?.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Our Products — Court Models */}
         <section className="py-20 bg-[#F3F3F3]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -234,6 +259,7 @@ export default function PadelPage() {
       </main>
       <Footer />
       <FloatingButtons />
-    </>);
+    </>
+  );
 
 }
