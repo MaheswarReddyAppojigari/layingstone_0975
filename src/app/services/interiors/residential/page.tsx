@@ -230,11 +230,6 @@ const brands = [
 
 export default function ResidentialInteriorsPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [activeCategory, setActiveCategory] = useState('All');
-
-  const filteredProjects = activeCategory === 'All' ?
-  portfolioProjects :
-  portfolioProjects?.filter((p) => p?.category === activeCategory);
 
   return (
     <>
@@ -592,73 +587,6 @@ export default function ResidentialInteriorsPage() {
                   </div>
                 )}
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── PORTFOLIO ── */}
-        <section className="py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-              <div>
-                <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-[0.2em]">Our Work</span>
-                <h2 className="text-4xl md:text-5xl font-bold text-[#1F3A5F] mt-4 leading-tight">
-                  Residential Interior<br />Portfolio
-                </h2>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {portfolioCategories?.map((cat) =>
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                  activeCategory === cat ?
-                  'bg-[#1F3A5F] text-white' :
-                  'bg-[#F3F3F3] text-[#1F3A5F] hover:bg-[#1F3A5F]/10'}`
-                  }>
-                  
-                    {cat}
-                  </button>
-                )}
-              </div>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredProjects?.map((project) =>
-              <div key={project?.name} className="group bg-[#F3F3F3] overflow-hidden hover:shadow-xl transition-all duration-400">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                    src={project?.img}
-                    alt={project?.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-                  
-                  </div>
-                  <div className="p-5 flex items-center justify-between">
-                    <div>
-                      <h3 className="font-bold text-[#1F3A5F] text-sm mb-1">{project?.name}</h3>
-                      <div className="flex items-center gap-3 text-xs text-gray-400">
-                        <span>{project?.category}</span>
-                        {project?.location && <><span>·</span><span>{project?.location}</span></>}
-                      </div>
-                    </div>
-                    <Link
-                    href="/portfolio"
-                    className="text-[#C6A15B] text-xs font-semibold hover:underline flex-shrink-0">
-                    
-                      View Project
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-            <div className="text-center mt-12">
-              <Link
-                href="/portfolio"
-                className="inline-block border-2 border-[#1F3A5F] text-[#1F3A5F] font-semibold px-10 py-4 hover:bg-[#1F3A5F] hover:text-white transition-colors duration-300 tracking-wide">
-                
-                View Full Portfolio
-              </Link>
             </div>
           </div>
         </section>

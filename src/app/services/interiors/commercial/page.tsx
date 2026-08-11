@@ -198,18 +198,6 @@ const brands = [
 
 export default function CommercialInteriorsPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [activeFilter, setActiveFilter] = useState('All');
-
-  const filteredProjects = activeFilter === 'All' ?
-  portfolioProjects :
-  portfolioProjects?.filter((p) => {
-    if (activeFilter === 'Office') return p?.type === 'Office';
-    if (activeFilter === 'Retail') return p?.type === 'Retail';
-    if (activeFilter === 'Hospitality') return p?.type === 'Hospitality';
-    if (activeFilter === 'Healthcare') return p?.type === 'Healthcare';
-    if (activeFilter === 'Education') return p?.type === 'Education';
-    return !['Office', 'Retail', 'Hospitality', 'Healthcare', 'Education']?.includes(p?.type);
-  });
 
   return (
     <>
@@ -468,74 +456,6 @@ export default function CommercialInteriorsPage() {
                   </div>
                 </div>
               )}
-            </div>
-          </div>
-        </section>
-
-        {/* ── PORTFOLIO ── */}
-        <section className="py-24 bg-[#F3F3F3]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-              <div>
-                <span className="text-[#C6A15B] font-semibold text-sm uppercase tracking-[0.2em]">Our Work</span>
-                <h2 className="text-4xl md:text-5xl font-bold text-[#1F3A5F] mt-4 leading-tight">
-                  Commercial Project<br />Showcase
-                </h2>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {portfolioFilters?.map((filter) =>
-                <button
-                  key={filter}
-                  onClick={() => setActiveFilter(filter)}
-                  className={`px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                  activeFilter === filter ?
-                  'bg-[#1F3A5F] text-white' :
-                  'bg-white text-[#1F3A5F] hover:bg-[#1F3A5F]/10'}`
-                  }>
-                  
-                    {filter}
-                  </button>
-                )}
-              </div>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredProjects?.map((project) =>
-              <div key={project?.name} className="group bg-white overflow-hidden hover:shadow-xl transition-all duration-400">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                    src={project?.img}
-                    alt={project?.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-                  
-                  </div>
-                  <div className="p-5 flex items-center justify-between">
-                    <div>
-                      <h3 className="font-bold text-[#1F3A5F] text-sm mb-1">{project?.name}</h3>
-                      <div className="flex items-center gap-3 text-xs text-gray-400">
-                        <span>{project?.type}</span>
-                        {project?.area && <><span>·</span><span>{project?.area}</span></>}
-                        {project?.location && <><span>·</span><span>{project?.location}</span></>}
-                      </div>
-                    </div>
-                    <Link
-                    href="/portfolio"
-                    className="text-[#C6A15B] text-xs font-semibold hover:underline flex-shrink-0">
-                    
-                      View Project
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-            <div className="text-center mt-12">
-              <Link
-                href="/portfolio"
-                className="inline-block border-2 border-[#1F3A5F] text-[#1F3A5F] font-semibold px-10 py-4 hover:bg-[#1F3A5F] hover:text-white transition-colors duration-300 tracking-wide">
-                
-                View Full Portfolio
-              </Link>
             </div>
           </div>
         </section>
