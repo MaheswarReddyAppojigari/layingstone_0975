@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
-import { Bars3Icon, XMarkIcon, ChevronDownIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -87,7 +87,7 @@ function DesktopDropdown({
             <div
               className={`absolute left-full top-0 w-52 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden transition-all duration-200 z-[60] ${
                 activeSubMenu === item.label
-                  ? 'opacity-100 translate-x-0 pointer-events-auto' :'opacity-0 -translate-x-2 pointer-events-none'
+                  ? 'opacity-100 translate-x-0 pointer-events-auto' : 'opacity-0 -translate-x-2 pointer-events-none'
               }`}
               onMouseEnter={() => handleSubEnter(item.label)}
               onMouseLeave={handleSubLeave}
@@ -153,16 +153,9 @@ function MobileNavItem({ item, depth = 0, onClose }: { item: NavItemType; depth?
 }
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleMouseEnter = (label: string) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -174,19 +167,12 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100' : 'bg-transparent'
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <AppLogo size={44} />
-            <span className={`font-bold text-xl tracking-tight transition-colors ${scrolled ? 'text-[#1F3A5F]' : 'text-white'}`}>
-              LayingStone
-            </span>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <AppLogo size={88} />
           </Link>
 
           {/* Desktop Nav */}
@@ -200,11 +186,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                    scrolled
-                      ? 'text-[#1F3A5F] hover:text-[#D4AF37] hover:bg-[#F3F3F3]'
-                      : 'text-white/90 hover:text-white hover:bg-white/10'
-                  }`}
+                  className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[#1F3A5F] hover:text-[#D4AF37] hover:bg-[#F3F3F3]"
                 >
                   {item.label}
                   {item.children && (
@@ -225,26 +207,10 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA */}
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href="tel:+919876543210"
-              className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-                scrolled ? 'text-[#1F3A5F] hover:text-[#D4AF37]' : 'text-white/90 hover:text-white'
-              }`}
-            >
-              <PhoneIcon className="w-4 h-4" />
-              +91 98765 43210
-            </a>
-            <Link href="/contact" className="btn-primary text-sm px-4 py-2">
-              Free Consultation
-            </Link>
-          </div>
-
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-[#1F3A5F]' : 'text-white'}`}
+            className="lg:hidden p-2 rounded-lg transition-colors text-[#1F3A5F]"
             aria-label="Toggle mobile menu"
           >
             {mobileOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
@@ -262,11 +228,6 @@ export default function Header() {
           {navLinks.map((item) => (
             <MobileNavItem key={item.label} item={item} onClose={() => setMobileOpen(false)} />
           ))}
-          <div className="pt-4 border-t border-gray-100">
-            <Link href="/contact" onClick={() => setMobileOpen(false)} className="btn-primary w-full justify-center text-sm">
-              Free Consultation
-            </Link>
-          </div>
         </div>
       </div>
     </header>
