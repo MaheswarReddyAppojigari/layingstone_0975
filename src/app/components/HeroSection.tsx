@@ -152,11 +152,11 @@ export default function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 fade-in-up stagger-4 opacity-0">
             <Link href="/contact" className="btn-primary text-base px-6 py-3.5">
-              Get Free Consultation
+              Let's Start Your Project
               <ArrowRightIcon className="w-4 h-4" />
             </Link>
             <Link href="/#portfolio" className="btn-outline text-base px-6 py-3.5">
-              Explore Projects
+              Our Work
             </Link>
           </div>
         </div>
