@@ -30,7 +30,7 @@ export default function CtaSection() {
       >
         <div className="accent-line mx-auto mb-6" />
         <h2 id="cta-heading" className="text-section-title font-bold text-white mb-4">
-          Let&apos;s Build Your Dream Home
+          Let&apos;s Build Your Dream Project
         </h2>
         <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
           Get a free consultation and transparent estimate. No obligations, just honest advice from

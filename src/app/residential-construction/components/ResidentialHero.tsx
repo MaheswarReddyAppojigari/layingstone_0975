@@ -60,7 +60,7 @@ export default function ResidentialHero() {
 
         <h1 className="text-hero-display font-bold text-white mb-4 fade-in-up stagger-2 opacity-0">
           Residential Construction<br />
-          <span className="text-accent">Packages</span>
+          <span className="text-accent">Buidling homes that tell your story</span>
         </h1>
 
         <p className="text-lg text-white/80 font-light max-w-2xl mb-8 leading-relaxed fade-in-up stagger-3 opacity-0">
