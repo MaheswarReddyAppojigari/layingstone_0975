@@ -10,19 +10,9 @@ import Link from 'next/link';
 
 const services = [
 {
-  title: 'Office Buildings',
+  title: 'PEB Structers',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ca8cbe70-1784051825624.png",
   alt: 'Modern glass corporate office building exterior'
-},
-{
-  title: 'Retail Spaces',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_186f55a7c-1766473158512.png",
-  alt: 'Luxury commercial retail storefront with premium finishes'
-},
-{
-  title: 'Shopping Complexes',
-  image: "https://images.unsplash.com/photo-1704215721225-a9847ba3e7d6",
-  alt: 'Contemporary shopping mall interior with modern architecture'
 },
 {
   title: 'Warehouses & Logistics',
@@ -30,17 +20,17 @@ const services = [
   alt: 'Modern industrial warehouse with high-clearance structure'
 },
 {
-  title: 'Hospitals & Healthcare',
+  title: 'Manufacturing Facilities',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_188a57dbb-1784132425353.png",
   alt: 'Contemporary hospital building with modern medical architecture'
 },
 {
-  title: 'Educational Institutions',
+  title: 'Commericial Buildings',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_10346fc4c-1767714122040.png",
   alt: 'Modern university campus building with architectural design'
 },
 {
-  title: 'Corporate Campuses',
+  title: 'Institutional Buildings',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d2edfe3a-1772772327924.png",
   alt: 'Premium corporate campus headquarters with landscaped grounds'
 },
@@ -96,11 +86,11 @@ export default function CommercialPage() {
               <span className="text-[#D4AF37] text-sm font-medium">Commercial Construction</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Building India&apos;s Commercial
-              <span className="block text-[#D4AF37]">Future, One Project at a Time</span>
+              INDUSTRIAL & COMMERCIAL CONSTRUCTION
+              <span className="block text-[#D4AF37]">Built for Business. Engineered to Perform</span>
             </h1>
             <p className="text-white/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-              From corporate headquarters to industrial complexes — LayingStone delivers large-scale commercial construction with engineering precision, certified materials, and zero compromise on quality.
+End-to-end construction solutions for warehouses, PEB structures, industrial facilities and commercial projects — from civil works to final execution.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="bg-[#D4AF37] text-[#1F3A5F] font-semibold px-8 py-4 rounded-xl hover:bg-[#c9a430] transition-colors">
@@ -128,7 +118,7 @@ export default function CommercialPage() {
                 Our integrated approach combines in-house architectural design, structural engineering, MEP coordination, and construction management under one roof — eliminating coordination gaps and ensuring seamless project delivery.
               </p>
               <div className="flex flex-wrap gap-10">
-                {[['500+', 'Projects Delivered'], ['15+', 'Years Experience'], ['98%', 'On-Time Delivery']]?.map(([num, label]) =>
+                {[['2 lakh+', 'Sq.Ft Delivered'], ['12+', 'Years Experience'], ['98%', 'On-Time Delivery']]?.map(([num, label]) =>
                 <div key={label}>
                     <div className="text-3xl font-bold text-[#D4AF37]">{num}</div>
                     <div className="text-sm text-gray-500 mt-1 font-medium">{label}</div>
@@ -257,7 +247,7 @@ export default function CommercialPage() {
               {[
               ['Single-Point Accountability', 'Design, engineering, and construction under one contract — no blame games, no gaps.'],
               ['Transparent Billing', 'Itemised BOQ with no hidden charges. You know exactly where every rupee goes.'],
-              ['Certified Engineers', 'Our team includes IIT/NIT-trained structural engineers and RERA-registered architects.'],
+              ['Certified Engineers', 'Experienced engineers and architects delivering quality projects with precision and reliability'],
               ['On-Time Delivery', '98% of our projects are delivered on or before the committed date.'],
               ['Post-Handover Support', '12-month defect liability period with dedicated support team.'],
               ['Pan-India Presence', 'Active project sites across Bangalore, Hyderabad, Chennai, Mumbai, and Pune.']]?.
