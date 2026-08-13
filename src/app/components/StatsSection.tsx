@@ -11,9 +11,9 @@ interface Stat {
 
 const stats: Stat[] = [
   { value: 12, suffix: '+', label: 'Years of Experience' },
-  { value: 850, suffix: '+', label: 'Projects Completed' },
+  { value: 70, suffix: '+', label: 'Projects Completed' },
   { value: 98, suffix: '%', label: 'Client Satisfaction' },
-  { value: 150, suffix: '+', label: 'Expert Engineers' },
+  { value: 1, suffix: 'Million+', label: 'Sq.Ft Delivered' },
 ];
 
 function CountUp({ target, suffix, prefix }: { target: number; suffix: string; prefix?: string }) {
