@@ -4,12 +4,38 @@ import React, { useEffect, useRef, useState } from 'react';
 import Icon from '@/components/ui/AppIcon';
 
 const reasons = [
-  { icon: 'AcademicCapIcon', title: 'Experienced Engineers', desc: 'Our team of 150+ certified engineers brings decades of expertise to every project.' },
-  { icon: 'CubeIcon', title: 'Quality Materials', desc: 'We use only branded materials — JSW steel, UltraTech cement, Kajaria tiles, Jaquar fittings.' },
-  { icon: 'ClockIcon', title: 'On-Time Delivery', desc: '98% of our projects are delivered on schedule with milestone-based progress tracking.' },
-  { icon: 'BanknotesIcon', title: 'Transparent Pricing', desc: 'Fixed per sq.ft pricing with zero hidden charges. Complete cost breakdown before you sign.' },
-  { icon: 'UserGroupIcon', title: 'Professional Team', desc: 'Dedicated project managers, site supervisors, and support staff assigned to your project.' },
-  { icon: 'ShieldCheckIcon', title: 'Safety Standards', desc: 'ISO-certified safety protocols with daily safety audits and worker welfare programs.' },
+  {
+    icon: 'AcademicCapIcon',
+    title: 'Experienced Engineers',
+    desc: 'Experienced engineers and project teams ensure coordinated execution, quality workmanship, and timely delivery.',
+  },
+  {
+    icon: 'UserGroupIcon',
+    title: 'In House Architects',
+    desc: 'Our in-house architect team creates innovative,functional and sustainable designs tailored to your vision',
+  },
+  {
+    icon: 'CubeIcon',
+    title: 'Quality Materials',
+    desc: 'We use only branded materials — JSW steel, UltraTech cement, Kajaria tiles, Jaquar fittings.',
+  },
+
+  {
+    icon: 'BanknotesIcon',
+    title: 'Transparent Pricing',
+    desc: 'Fixed per sq.ft pricing with zero hidden charges. Complete cost breakdown before you sign.',
+  },
+
+  {
+    icon: 'ShieldCheckIcon',
+    title: 'Safety Standards',
+    desc: 'ISO-certified safety protocols with daily safety audits and worker welfare programs.',
+  },
+  {
+    icon: 'ClockIcon',
+    title: 'On-Time Delivery',
+    desc: '98% of our projects are delivered on schedule with milestone-based progress tracking.',
+  },
 ];
 
 export default function WhyChooseUs() {
@@ -17,23 +43,38 @@ export default function WhyChooseUs() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(
+      ([e]) => {
+        if (e.isIntersecting) setVisible(true);
+      },
+      { threshold: 0.1 }
+    );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section id="about" className="section-pad bg-background" aria-labelledby="why-heading" ref={ref}>
+    <section
+      id="about"
+      className="section-pad bg-background"
+      aria-labelledby="why-heading"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto container-pad">
         {/* Header */}
-        <div className={`text-center mb-14 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div
+          className={`text-center mb-14 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        >
           <div className="accent-line mx-auto mb-4" />
-          <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Why LayingStone</p>
+          <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
+            Why LayingStone
+          </p>
           <h2 id="why-heading" className="text-section-title font-bold text-foreground">
             Built on Trust, Delivered with Excellence
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Every project we undertake is a commitment to quality, transparency, and your peace of mind.
+            Every project we undertake is a commitment to quality, transparency, and your peace of
+            mind.
           </p>
         </div>
 

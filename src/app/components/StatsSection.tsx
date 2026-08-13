@@ -13,7 +13,7 @@ const stats: Stat[] = [
   { value: 12, suffix: '+', label: 'Years of Experience' },
   { value: 70, suffix: '+', label: 'Projects Completed' },
   { value: 98, suffix: '%', label: 'Client Satisfaction' },
-  { value: 1, suffix: 'Million+', label: 'Sq.Ft Delivered' },
+  { value: 1, suffix: ' Million+', label: 'Sq.Ft Delivered' },
 ];
 
 function CountUp({ target, suffix, prefix }: { target: number; suffix: string; prefix?: string }) {
@@ -49,7 +49,9 @@ function CountUp({ target, suffix, prefix }: { target: number; suffix: string; p
 
   return (
     <span ref={ref}>
-      {prefix}{count}{suffix}
+      {prefix}
+      {count}
+      {suffix}
     </span>
   );
 }
