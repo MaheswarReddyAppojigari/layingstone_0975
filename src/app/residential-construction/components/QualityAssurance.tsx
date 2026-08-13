@@ -7,7 +7,6 @@ const checks = [
   { label: '100+ Quality Checks', desc: 'Across 15 construction phases' },
   { label: 'Branded Materials', desc: 'With authenticity certificates' },
   { label: 'Structural Safety', desc: 'Per IS code standards' },
-  { label: 'Certified Engineers', desc: 'Government-licensed professionals' },
   { label: 'Site Supervision', desc: 'Daily on-site monitoring' },
   { label: 'Daily Updates', desc: 'Photo + video progress reports' },
   { label: 'Transparent Billing', desc: 'Milestone-linked payment schedule' },

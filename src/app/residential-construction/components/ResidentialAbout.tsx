@@ -29,9 +29,7 @@ export default function ResidentialAbout() {
               
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-4 -right-4 bg-card rounded-2xl p-5 card-shadow">
-              
-            </div>
+            
           </div>
 
           {/* Content */}
@@ -45,7 +43,7 @@ export default function ResidentialAbout() {
               At LayingStone, we believe your home is more than a structure — it&apos;s a reflection of your aspirations. Our residential construction service delivers precision-engineered homes using only the finest branded materials.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              From initial consultation to final handover, our team of 150+ certified engineers, dedicated project managers, and skilled craftsmen ensure every milestone is met with excellence and transparency.
+              From initial consultation to final handover, our team of qualified  engineers, dedicated project managers, and skilled craftsmen ensure every milestone is met with excellence and transparency.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {[
