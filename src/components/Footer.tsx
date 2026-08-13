@@ -88,18 +88,30 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/60">
               <li className="flex gap-2">
                 <span className="text-[#D4AF37] mt-0.5">📍</span>
-                <span>42 Prestige Tower, MG Road, Bangalore 560001</span>
+                <span>Workhub,Doddanakundi Industrail Area,Graphite India Main Rd,WhiteField,KEB Colony,Industrail Area,Mahadevapura,Bengaluru,Karnataka560048</span>
               </li>
               <li>
-                <a href="tel:+919876543210" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
+                <a href="tel:+918123069600" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
                   <span className="text-[#D4AF37]">📞</span>
-                  <span>+91 98765 43210</span>
+                  <span>+91 81230 69600</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@layingstone.in" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
+                <a href="tel:+919908087517" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
+                  <span className="text-[#D4AF37]">📞</span>
+                  <span>+91 99080 87517</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+919701918951" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
+                  <span className="text-[#D4AF37]">📞</span>
+                  <span>+91 97019 18951 </span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@layingstone.in" className="flex gap-2 hover:text-[#D4AF37] transition-colors">
                   <span className="text-[#D4AF37]">✉️</span>
-                  <span>hello@layingstone.in</span>
+                  <span>info@layingstone.in</span>
                 </a>
               </li>
               <li className="flex gap-2">
