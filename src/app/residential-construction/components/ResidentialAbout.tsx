@@ -30,8 +30,7 @@ export default function ResidentialAbout() {
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-4 -right-4 bg-card rounded-2xl p-5 card-shadow">
-              <p className="text-3xl font-bold text-accent">850+</p>
-              <p className="text-xs text-muted-foreground font-medium">Homes Built</p>
+              
             </div>
           </div>
 
