@@ -20,6 +20,8 @@ interface Project {
   featured?: boolean;
 }
 
+&asop;
+
 const projects: Project[] = [
   { id: 1, name: 'Prestige Villa, Whitefield', category: 'Residential', location: 'Bangalore', year: '2025', area: '4,200 sq.ft', desc: 'A contemporary 4BHK villa with premium finishes, landscaped garden, and smart home integration.', emoji: '🏡', featured: true },
   { id: 2, name: 'Skyline Corporate Park', category: 'Commercial', location: 'Hyderabad', year: '2025', area: '45,000 sq.ft', desc: 'Grade-A office complex with IGBC Green certification, modern amenities, and flexible floor plates.', emoji: '🏢', featured: true },
@@ -33,7 +35,7 @@ const projects: Project[] = [
   { id: 10, name: 'Grand Hotel Lobby', category: 'Commercial Interiors', location: 'Chennai', year: '2024', area: '12,000 sq.ft', desc: 'Five-star hotel lobby and common area fit-out with premium materials and bespoke lighting design.', emoji: '🏨' },
   { id: 11, name: 'Olympic Training Centre', category: 'Sport Infra', location: 'Pune', year: '2024', area: '25,000 sq.ft', desc: 'Multi-sport indoor facility with certified surfaces for basketball, badminton, and athletics.', emoji: '🏟️' },
   { id: 12, name: 'Corporate Campus Grounds', category: 'Landscaping', location: 'Bangalore', year: '2025', area: '2 acres', desc: 'Complete landscaping of a corporate campus with formal gardens, water features, and outdoor seating.', emoji: '🌳' },
-  { id: 13, name: 'Riverside Luxury Homes', category: 'Residential', location: 'Kochi', year: '2023', area: '3,800 sq.ft', desc: 'Cluster of 8 luxury villas with river views, private pools, and premium construction quality.', emoji: '🏘️' },
+  { id: 13, name: 'Riverside& Luxury Homes', category: 'Residential', location: 'Kochi', year: '2023', area: '3,800 sq.ft', desc: 'Cluster of 8 luxury villas with river views, private pools, and premium construction quality.', emoji: '🏘️' },
   { id: 14, name: 'Medical Centre Construction', category: 'Commercial', location: 'Hyderabad', year: '2023', area: '18,000 sq.ft', desc: 'NABH-compliant medical centre with OT suites, ICU, and diagnostic facilities.', emoji: '🏥' },
   { id: 15, name: 'Modern Villa Interiors', category: 'Residential Interiors', location: 'Hyderabad', year: '2023', area: '3,200 sq.ft', desc: 'Contemporary villa interiors with open-plan living, modular kitchen, and home theatre.', emoji: '🛏️' },
   { id: 16, name: 'Tennis Academy Courts', category: 'Sport Infra', location: 'Chennai', year: '2023', area: '8,000 sq.ft', desc: 'Four ITF-standard tennis courts with synthetic surface, lighting, and spectator gallery.', emoji: '🎾' },
