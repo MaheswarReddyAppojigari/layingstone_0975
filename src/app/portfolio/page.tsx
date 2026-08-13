@@ -20,7 +20,6 @@ interface Project {
   featured?: boolean;
 }
 
-&asop;
 
 const projects: Project[] = [
   { id: 1, name: 'Prestige Villa, Whitefield', category: 'Residential', location: 'Bangalore', year: '2025', area: '4,200 sq.ft', desc: 'A contemporary 4BHK villa with premium finishes, landscaped garden, and smart home integration.', emoji: '🏡', featured: true },
