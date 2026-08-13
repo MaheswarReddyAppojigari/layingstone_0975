@@ -555,7 +555,7 @@ export default function SportInfraPage() {
             <div className="text-center px-6">
               <p className="text-[#C6A15B] text-xs font-semibold tracking-[0.3em] uppercase mb-6">Our Approach</p>
               <h2 className="text-5xl md:text-7xl font-bold text-white leading-[0.95]">
-                11 Sports.<br />One Standard<br />of Excellence.
+                Every Sport.<br />Every Surface.<br />Expertly Engineered.
               </h2>
             </div>
           </div>

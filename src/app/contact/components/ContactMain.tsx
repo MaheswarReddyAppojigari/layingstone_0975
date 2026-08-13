@@ -7,7 +7,7 @@ const contactInfo = [
   {
     icon: MapPinIcon,
     label: 'Our Office',
-    value: '42 Prestige Tower, MG Road\nBangalore 560001, Karnataka',
+    value: 'Workhub,Doddanakundi Industrail Area,Graphite India Main Rd,WhiteField,KEB Colony,Industrail Area,Mahadevapura\nBengaluru,Karnataka 560048',
   },
   {
     icon: PhoneIcon,
@@ -132,7 +132,7 @@ export default function ContactMain() {
                 <div className="text-center">
                   <MapPinIcon className="w-10 h-10 text-accent mx-auto mb-2" />
                   <p className="text-foreground font-semibold text-sm">LayingStone Office</p>
-                  <p className="text-muted-foreground text-xs">42 Prestige Tower, MG Road, Bangalore</p>
+                  <p className="text-muted-foreground text-xs">Workhub,Doddanakundi Industrail Area,Graphite India Main Rd,WhiteField,KEB Colony,Industrail Area,Mahadevapura,Bengaluru,Karnataka 560048</p>
                   <a
                     href="https://maps.google.com/?q=MG+Road+Bangalore"
                     target="_blank"

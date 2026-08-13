@@ -20,6 +20,8 @@ interface Project {
   featured?: boolean;
 }
 
+&asop;
+
 const projects: Project[] = [
   { id: 1, name: 'Prestige Villa, Whitefield', category: 'Residential', location: 'Bangalore', year: '2025', area: '4,200 sq.ft', desc: 'A contemporary 4BHK villa with premium finishes, landscaped garden, and smart home integration.', emoji: '🏡', featured: true },
   { id: 2, name: 'Skyline Corporate Park', category: 'Commercial', location: 'Hyderabad', year: '2025', area: '45,000 sq.ft', desc: 'Grade-A office complex with IGBC Green certification, modern amenities, and flexible floor plates.', emoji: '🏢', featured: true },
