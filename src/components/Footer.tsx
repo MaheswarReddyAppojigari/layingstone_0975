@@ -88,7 +88,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/60">
               <li className="flex gap-2">
                 <span className="text-[#D4AF37] mt-0.5">📍</span>
-                <span>Workhub,Doddanakundi Industrail Area,Graphite India Main Rd,WhiteField,KEB Colony,Industrail Area,Mahadevapura,Bengaluru,Karnataka560048</span>
+                <span>Workhub,Doddanakundi Industrail Area,Graphite India Main Rd,WhiteField,KEB Colony,Industrail Area,Mahadevapura,Bengaluru,Karnataka 560048</span>
               </li>
               <li>
                 <a href="tel:+918123069600" className="flex gap-2 hover:text-[#D4AF37] transition-colors">

@@ -12,14 +12,14 @@ const contactInfo = [
   {
     icon: PhoneIcon,
     label: 'Call Us',
-    value: '+91 98765 43210\n+91 80 4567 8901',
-    href: 'tel:+919876543210',
+    value: '+91 81230 69600\n+91 9908087517',
+    href: 'tel:+918123069600',
   },
   {
     icon: EnvelopeIcon,
     label: 'Email Us',
-    value: 'hello@layingstone.in\nsupport@layingstone.in',
-    href: 'mailto:hello@layingstone.in',
+    value: 'info@layingstone.in\nsupport@layingstone.in',
+    href: 'mailto:info@layingstone.in',
   },
   {
     icon: ClockIcon,
@@ -89,7 +89,7 @@ export default function ContactMain() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/919876543210?text=Hi%20LayingStone%2C%20I%20need%20a%20consultation."
+              href="https://wa.me/918123069600?text=Hi%20LayingStone%2C%20I%20need%20a%20consultation."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white rounded-xl px-5 py-4 font-semibold text-sm transition-colors shadow-md"
@@ -194,7 +194,7 @@ export default function ContactMain() {
                         required
                         value={form.phone}
                         onChange={handleChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 81230 69600"
                         className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent text-sm"
                       />
                     </div>

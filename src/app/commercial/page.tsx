@@ -306,8 +306,8 @@ export default function CommercialPage() {
               <Link href="/contact" className="bg-[#D4AF37] text-[#1F3A5F] font-semibold px-8 py-4 rounded-xl hover:bg-[#c9a430] transition-colors">
                 Get Free Estimate
               </Link>
-              <a href="tel:+919876543210" className="border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors">
-                Call +91 98765 43210
+              <a href="tel:+918123069600" className="border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors">
+                Call +91 81230 69600
               </a>
             </div>
           </div>
