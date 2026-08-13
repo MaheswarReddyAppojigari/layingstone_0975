@@ -73,7 +73,7 @@ export default function ConsultationForm() {
                   required
                   value={form.phone}
                   onChange={handleChange}
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 81230 69600"
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent text-sm"
                 />
               </div>
