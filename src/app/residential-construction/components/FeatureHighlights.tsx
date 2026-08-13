@@ -7,7 +7,7 @@ const features = [
   { icon: 'BanknotesIcon', title: 'Transparent Pricing', desc: 'Fixed per sq.ft rate with complete cost breakdown upfront.' },
   { icon: 'CubeIcon', title: 'Premium Materials', desc: 'Only JSW, UltraTech, Kajaria, Jaquar and other top brands.' },
   { icon: 'ShieldCheckIcon', title: 'No Hidden Charges', desc: 'What we quote is what you pay. Zero surprises.' },
-  { icon: 'AcademicCapIcon', title: 'Professional Engineers', desc: '150+ certified engineers with 12+ years average experience.' },
+  { icon: 'AcademicCapIcon', title: 'Professional Engineers', desc: 'qualified engineers with 12+ years average experience.' },
   { icon: 'ClockIcon', title: 'On-time Delivery', desc: '98% of projects delivered on schedule with milestone tracking.' },
   { icon: 'DocumentCheckIcon', title: 'Structural Warranty', desc: 'Up to lifetime structural warranty depending on package.' },
   { icon: 'UserIcon', title: 'Dedicated PM', desc: 'Your own project manager as single point of contact.' },
