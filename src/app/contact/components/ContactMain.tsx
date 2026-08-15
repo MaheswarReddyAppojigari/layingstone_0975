@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: PhoneIcon,
     label: 'Call Us',
-    value: '+91 81230 69600\n+91 9908087517',
+    value: '+91 81230 69600\n+91 99080 87517\n+91 97019 18951',
     href: 'tel:+918123069600',
   },
   {
