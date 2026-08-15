@@ -182,17 +182,16 @@ export default function IndustriesPage() {
                     </p>
                     <ul className="space-y-1 mb-5">
                       {ind?.services?.map((s) => (
-                        <li key={s} className={`text-xs flex items-center gap-2 transition-colors ${hoveredCard === ind?.title ? 'text-white/60' : 'text-gray-400'}`}>
-                          <span className="text-[#D4AF37]">•</span> {s}
-                        </li>
-                      ))}
-                    </ul>
-                    <Link
+               <Link
                       href={ind?.href}
                       className={`inline-flex items-center gap-1 text-xs font-semibold transition-colors ${hoveredCard === ind?.title ? 'text-[#D4AF37]' : 'text-[#1F3A5F]'}`}
-                    >
-                      Learn More →
-                    </Link>
+                    >        <li key={s} className={`text-xs flex items-center gap-2 transition-colors ${hoveredCard === ind?.title ? 'text-white/60' : 'text-gray-400'}`}>
+                          <span className="text-[#D4AF37]">•</span> {s}
+                        </li>                    </Link>
+
+                      ))}
+                    </ul>
+                    
                   </div>
                 </div>
               ))}
