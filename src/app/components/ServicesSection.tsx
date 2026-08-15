@@ -61,9 +61,9 @@ export default function ServicesSection() {
                     </li>
                   ))}
                 </ul>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent group-hover:gap-3 transition-all">
+                {/* <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent group-hover:gap-3 transition-all">
                   Learn More <ArrowRightIcon className="w-4 h-4" />
-                </span>
+                </span> */}
               </div>
             </Link>
           ))}
